@@ -1,7 +1,10 @@
 #include <stdio.h>
 /**
-*main - This is Entry Function of The Program
-*return: if (0) it's Success other with it's a failure
+ * main - This is Entry Function of The Program
+ *
+ * Description: C Program
+ *
+ * Return: Always 0 (success)
 */
 int main(void)
 {
