@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-/** 
- * main - This is Entry Function of The Program
+/**
+ * main - Entry Point of The Program
  *
- * Description: C Program
+ * Description: C Program Prints Line
  *
- * Return: Always 0 (success)
+ * Return: Alaways 0 (Success)
 */
 
 int main(void)
