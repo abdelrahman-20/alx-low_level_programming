@@ -23,7 +23,7 @@ int main(void)
 				putchar(n2 + '0');
 			}
 
-			if (n1 + n2 < 17)
+			if (n1 + n2 != 17)
 			{
 				putchar(',');
 				putchar(' ');
