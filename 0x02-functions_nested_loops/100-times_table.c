@@ -10,33 +10,38 @@ void print_times_table(int n)
 {
 	int i, j, product;
 
-	for (i = 0; i <= n; i++)
+	if (n == 0)
+		printf("%d\n", n);
+	else
 	{
-		for (j = 0; j <= n; j++)
+		for (i = 0; i <= n; i++)
 		{
-			product = i * j;
+			for (j = 0; j <= n; j++)
+			{
+				product = i * j;
 
-			if (j == 0)
-			{
-				printf("%d, ", product);
-			}
-			else if (j == n)
-			{
-				if (product <= 9)                                         
-					printf("  %d\n", product);                                 
-				else if (product <= 99)                                         
-					printf(" %d\n", product);                                 
-				else                                         
-					printf("%d\n", product);
-			}
-			else
-			{
-				if (product <= 9)
-					printf("  %d, ", product);
-				else if (product <= 99)
-					printf(" %d, ", product);
-				else
+				if (j == 0)
+				{
 					printf("%d, ", product);
+				}
+				else if (j == n)
+				{
+					if (product <= 9)
+						printf("  %d\n", product);
+					else if (product <= 99)
+						printf(" %d\n", product);
+					else
+						printf("%d\n", product);
+				}
+				else
+				{
+					if (product <= 9)
+						printf("  %d, ", product);
+					else if (product <= 99)
+						printf(" %d, ", product);
+					else
+						printf("%d, ", product);
+				}
 			}
 		}
 	}
