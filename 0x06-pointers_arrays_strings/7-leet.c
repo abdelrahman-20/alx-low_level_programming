@@ -13,6 +13,7 @@ char *leet(char *str)
 	int i, j;
 	char key[] = {'A', 'E', 'O', 'T', 'L'};
 	int val[] = {4, 3, 0, 7, 1};
+	char *ptr = str;
 
 
 	for (i = 0; str[i] != '\0'; i++)
@@ -26,5 +27,5 @@ char *leet(char *str)
 		}
 	}
 
-	return (str);
+	return (ptr);
 }
