@@ -1,4 +1,5 @@
-#include "main.h"i
+#include "main.h"
+#include <stdio.h>
 
 /**
  * separator - Check for Delimeter
@@ -47,7 +48,9 @@ char *cap_string(char *str)
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (separator(str[i]))
+		{
 			sep = 1;
+		}
 		else if (sep && isLower(str[i]))
 		{
 			str[i] -= 32;
