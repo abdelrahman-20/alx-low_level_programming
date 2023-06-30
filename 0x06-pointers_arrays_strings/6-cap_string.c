@@ -50,11 +50,13 @@ char *cap_string(char *str)
 			sep = 1;
 		else if (sep && isLower(str[i]))
 		{
-			*str -= 32;
+			str[i] -= 32;
 			sep = 0;
 		}
 		else
+		{
 			sep = 0;
+		}
 	}
 	return (ptr);
 }
