@@ -9,6 +9,7 @@
 
 char *leet(char *str)
 {
+	int i, j;
 	char key[] = {'A', 'E', 'O', 'T', 'L'}
 	char val[] = {4, 3, 0, 7, 1};
 
