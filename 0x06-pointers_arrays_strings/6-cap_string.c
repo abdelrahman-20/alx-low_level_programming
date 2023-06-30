@@ -21,6 +21,21 @@ int separator(char c)
 
 
 /**
+ * isLower - Determine if Char is LowerCase
+ * @c: The Char To Be Checked
+ *
+ * Return: 0 or 1
+*/
+
+int isLower(char c)
+{
+	if (c >= 97 && c <= 122)
+		return (1);
+	return (0);
+}
+
+
+/**
  * cap_string - Capitalize Each Word
  * @str: The String
  * Return: The Final String
@@ -33,17 +48,13 @@ char *cap_string(char *str)
 
 	while (*str)
 	{
-		if (*str >= 97 && *str <= 122)
-			isLower = 1;
-		if (separator(str[i])
+		if (separator(*str))
 			sep = 1;
 
-		if (sep && isLower)
+		if (sep && isLower(*str))
 		{
 			*str -= 32;
-
 			sep = 0;
-			isLower = 0;
 		}
 		str++;
 	}
