@@ -43,20 +43,19 @@ int isLower(char c)
 
 char *cap_string(char *str)
 {
-	int sep = 1;
+	int i, sep = 1;
 	char *ptr = str;
 
-	while (*str)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (separator(*str))
+		if (separator(str[i]))
 			sep = 1;
 
-		if (sep && isLower(*str))
+		if (sep && isLower(str[i]))
 		{
 			*str -= 32;
 			sep = 0;
 		}
-		str++;
 	}
 	return (ptr);
 }
