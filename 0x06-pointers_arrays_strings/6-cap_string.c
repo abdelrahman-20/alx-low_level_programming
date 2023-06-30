@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main.h"i
 
 /**
  * separator - Check for Delimeter
@@ -29,9 +29,7 @@ int separator(char c)
 
 int isLower(char c)
 {
-	if (c >= 97 && c <= 122)
-		return (1);
-	return (0);
+	return (c >= 97 && c <= 122);
 }
 
 
@@ -50,12 +48,13 @@ char *cap_string(char *str)
 	{
 		if (separator(str[i]))
 			sep = 1;
-
-		if (sep && isLower(str[i]))
+		else if (sep && isLower(str[i]))
 		{
 			*str -= 32;
 			sep = 0;
 		}
+		else
+			sep = 0;
 	}
 	return (ptr);
 }
