@@ -43,7 +43,7 @@ int isLower(char c)
 
 char *cap_string(char *str)
 {
-	int isLower = 0, sep = 0;
+	int sep = 1;
 	char *ptr = str;
 
 	while (*str)
