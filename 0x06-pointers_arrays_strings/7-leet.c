@@ -11,21 +11,19 @@
 char *leet(char *str)
 {
 	int i, j;
-	char key[] = {'A', 'E', 'O', 'T', 'L'};
-	int val[] = {4, 3, 0, 7, 1};
-	char *ptr = str;
-
+	char key[] = {"AaEeOoTtLl"};
+	int val[] = {"4433007711"};
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (j = 0; j < (sizeof(key) / sizeof(key[0])); j++)
+		for (j = 0; j < 10; j++)
 		{
-			if (str[i] == key[j] || str[i] == key[j] + 32)
+			if (str[i] == key[j])
 			{
-				str[i] = val[j] + '0';
+				str[i] = val[j];
 			}
 		}
 	}
 
-	return (ptr);
+	return (str);
 }
