@@ -28,17 +28,22 @@ int separator(char c)
 
 char *cap_string(char *str)
 {
-	int isLower = 0;
+	int isLower = 0, sep = 0;
 	char *ptr = str;
 
 	while (*str)
 	{
 		if (*str >= 97 && *str <= 122)
 			isLower = 1;
+		if (separator(str[i])
+			sep = 1;
 
-		if (separator(str[i]) && isLower)
+		if (sep && isLower)
 		{
 			*str -= 32;
+
+			sep = 0;
+			isLower = 0;
 		}
 		str++;
 	}
