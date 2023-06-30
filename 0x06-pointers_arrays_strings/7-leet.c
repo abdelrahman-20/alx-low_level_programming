@@ -11,7 +11,7 @@ char *leet(char *str)
 {
 	int i, j;
 	char key[] = {"AaEeOoTtLl"};
-	int val[] = {"4433007711"};
+	char val[] = {"4433007711"};
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
