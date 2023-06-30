@@ -20,7 +20,7 @@ char *leet(char *str)
 		{
 			if (str[i] == key[j] || str[i] == key[j] + 32)
 			{
-				str[i] = val[j] + 48;
+				str[i] = val[j] + '0';
 			}
 		}
 	}
