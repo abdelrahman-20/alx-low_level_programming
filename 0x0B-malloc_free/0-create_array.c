@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * create_array - A Function To Initialize an Array
+ * *create_array - A Function To Initialize an Array
  * @size: The Size of The Array
  * @c: The Char To Initialize with
  * Return: A Pointer To The Array
