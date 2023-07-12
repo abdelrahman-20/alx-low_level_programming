@@ -7,7 +7,7 @@
  * Return: 2D Array of Size width * Height
 */
 
-int **alloc_grid(int width, int height);
+int **alloc_grid(int width, int height)
 {
 	int i, j, **tab;
 
