@@ -4,7 +4,8 @@
  * print_numbers - Function To Print
  * @separator: ...
  * @n: ...........
- * @...: .........
+ * @...: The Arguments
+ * Return: void
 */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
