@@ -35,7 +35,7 @@ char **strtow(char *str)
 	int i, j, k, l, n = 0, wc = 0;
 	char **w;
 
-	if (str == NULL || str == "" || *str == '\0')
+	if (str == NULL || *str == '\0')
 		return (NULL);
 	n = wrdcnt(str);
 	if (n == 1)
