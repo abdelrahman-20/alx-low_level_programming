@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "calc.h"
+#include "3-calc.h"
 
 /**
  * main - Main Function of Program
@@ -9,7 +9,7 @@
  * Return: 0 If Success
 */
 
-int main(int argc, char **argv[])
+int main(int argc, char *argv[])
 {
 	int (*op_func)(int, int), a, b;
 
