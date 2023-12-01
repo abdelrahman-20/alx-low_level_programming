@@ -11,7 +11,7 @@ void hash_table_delete(hash_table_t *ht)
 	unsigned long int i;
 	hash_node_t *node, *tmp;
 
-	if (!ht || ht->array)
+	if (!ht || !ht->array || ht->size == 0)
 		return;
 
 	for (i = 0; i < ht->size; i++)
