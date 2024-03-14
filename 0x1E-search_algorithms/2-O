@@ -1,0 +1,1 @@
+Time complexity for linear search is denoted by O(n) as every element in the array is compared only once. In linear search, best-case complexity is O(1) where the element is found at the first index. Worst-case complexity is O(n) where the element is found at the last index or element is not present in the array.
